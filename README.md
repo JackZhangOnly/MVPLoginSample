@@ -3,4 +3,4 @@ An android login sample using MVP architecture
 
 
 
-![](https://github.com/JackZhangOnly/MVPLoginSample/blob/master/screenshot/lgin1.jpg =100x300)
+![](https://github.com/JackZhangOnly/MVPLoginSample/blob/master/screenshot/lgin1.jpg =100x100)
