@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jackzhang.mvplogin.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/login_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:hint="username is required"
+
+            />
+
+    </LinearLayout>
+ss <LinearLayout
+    android:id="@+id/pwdLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/nameLayout"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/login_upassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password is required"
+
+        />
+</LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/login_loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorColor="@color/colorPrimary"
+        android:layout_above="@+id/login_loginbtn"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="username:jack\npassword:123"
+        android:textColor="@color/colorAccent"
+        />
+
+</RelativeLayout>
